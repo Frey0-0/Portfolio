@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+body{
+    background-color: black;
+    color: white;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(83, 82, 82, 0.589);
+
+}
+.nav-bar-wrap{
+    width: 1vw;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4vw;
+} 
+nav ul{
+    display: flex;
+}
+.nav-items li a{
+    font-size: 2vw;
+    color: rgb(201, 151, 65);
+}
+.nav-items li{
+    list-style: none;
+    margin-right: 10vw;
+    margin-top: 0.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-items li a:hover{
+    color: rgba(8, 82, 8, 0.729);
+}
+#hello{
+    color: rgb(41, 117, 193);
+    padding-left: 4vw;
+    font-family: "Roboto", serif;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(20, end) 1s 1 normal both;
+    -webkit-animation: typing 2s steps(20, end) 1s 1 normal both;
+    font-size: 60px;
+}    
+#orange{
+    color:rgba(249, 141, 86, 0.92); ;
+}
+#lblue{
+    color: rgb(24, 207, 227);
+}
+#green{
+    color: rgb(148, 248, 128);
+}
+@keyframes slow {
+    0% {
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+}
+@keyframes typing{
+    from {
+      width: 0;
+    }
+    to {
+      width: 350px;
+    }
+  }
+@-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 350px;
+    }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+#para{
+    animation: slow 7.5s ease 0s 1 normal forwards;
+    visibility: hidden;
+    padding-left: 4vw;
+    font-size: 30px;
+}
+.footer{
+    background: rgb(12, 120, 222);
+    color:white;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    bottom: 0;
+    width: 99.53vw;
+    height: 2vw;
+    font-size: 0.75vw;
+    font-family: "Roboto",serif;
+    gap: 1rem;
+}
+

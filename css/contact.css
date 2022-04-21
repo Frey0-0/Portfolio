@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+body{
+    background-color: black;
+    color: white;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(83, 82, 82, 0.589);
+
+}
+.nav-bar-wrap{
+    width: 1vw;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4vw;
+} 
+nav ul{
+    display: flex;
+}
+.nav-items li a{
+    font-size: 2vw;
+    color: rgb(201, 151, 65);
+}
+.nav-items li{
+    list-style: none;
+    margin-right: 10vw;
+    margin-top: 0.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-items li a:hover{
+    color: rgba(8, 82, 8, 0.729);
+}  
+
+#orange{
+    color:rgba(249, 141, 86, 0.92); ;
+}
+#lblue{
+    color: rgb(24, 207, 227);
+}
+#green{
+    color: rgb(148, 248, 128);
+}
+
+.footer{
+    background: rgb(12, 120, 222);
+    color:white;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    bottom: 0;
+    width: 99.53vw;
+    height: 2vw;
+    font-size: 0.75vw;
+    font-family: "Roboto",serif;
+    gap: 1rem;
+}
+.social-icons {
+    display: flex;
+    flex-direction:row;
+    margin-top:4vw; 
+    margin-bottom: 3vw;
+}
+.social-icons a {
+    margin-right: 3vw;
+}
+div img{
+    height: 40px;
+    width: 40px; 
+    max-width: 100%;
+    height: auto;
+    animation: slow 3s ease 0s 1 normal forwards;
+}
+#para{
+    padding-left: 4vw;
+    font-size: 40px;
+}
+@keyframes slow {
+    0% {
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+}
