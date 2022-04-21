@@ -105,3 +105,23 @@ nav ul{
 #blue{
     color: rgb(41, 117, 193);
 }
+@media all and (max-width:600px){
+    nav{
+        height: 4vh;
+    } 
+    .nav-items li a{
+        font-size: 2vh;
+    }
+    #hello{
+        font-size:3.5vh;
+    }
+    #para{
+        font-size:2vh;
+    }
+    .footer{
+        height: 2vh;
+        width: 99vw;
+        font-size: 0.9vh;
+        bottom:0;
+    }
+}

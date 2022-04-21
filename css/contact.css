@@ -69,15 +69,15 @@ nav ul{
     margin-right: 3vw;
 }
 div img{
-    height: 40px;
-    width: 40px; 
+    height: 2.5vw;
+    width: 2.5vw; 
     max-width: 100%;
     height: auto;
     animation: slow 3s ease 0s 1 normal forwards;
 }
 #para{
     padding-left: 4vw;
-    font-size: 40px;
+    font-size: 2.5vw;
 }
 @keyframes slow {
     0% {
@@ -91,4 +91,25 @@ div img{
 }
 #blue{
     color: rgb(41, 117, 193);
+}
+@media all and (max-width:600px){
+    nav{
+        height: 4vh;
+    } 
+    .nav-items li a{
+        font-size: 2vh;
+    }
+    #para{
+        font-size:3vh;
+    }
+    .footer{
+        height: 2vh;
+        width: 99vw;
+        font-size: 0.9vh;
+        bottom:0;
+    }
+    div img{
+        height: 4vh;
+        width: 4vh;
+    }
 }

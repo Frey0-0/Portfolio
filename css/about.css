@@ -8,7 +8,7 @@ img:hover{
     top: -5px;
     left: -5px;
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(226, 217, 217, 0.932);
+    box-shadow: 0 0 1vw rgba(226, 217, 217, 0.932);
 }
 .nav-bar{
     display: flex;
@@ -66,24 +66,24 @@ nav ul{
     gap: 1rem;  
 }
 #para{
-    padding-left: 60px;
-    font-size: 32px;
+    padding-left: 4vw;
+    font-size: 2vw;
     font-family: 'Titillium Web', sans-serif;
     animation: slow 1s ease 1s 1 normal forwards;
     -webkit-animation: slow 1s ease 1s 1 normal forwards;
     visibility: hidden;
 }
 #para1{
-    padding-left: 60px;
-    font-size: 32px;
+    padding-left: 4vw;
+    font-size: 2vw;
     font-family: 'Titillium Web', sans-serif;
     animation: slow 4s ease 1s 1 normal forwards;
     -webkit-animation: slow 4s ease 1s 1 normal forwards;
     visibility: hidden;
 }
 #para2{
-    padding-left: 60px;
-    font-size: 32px;
+    padding-left: 4vw;
+    font-size: 2vw;
     font-family: 'Titillium Web', sans-serif;
     animation: slow 7s ease 1s 1 normal forwards;
     -webkit-animation: slow 7s ease 1s 1 normal forwards;
@@ -94,15 +94,15 @@ nav ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10rem;
+    gap: 8vw;
     justify-content: center;
     align-items: center; 
 }
 .row img{
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
-    height: 310px;
+    width: 25vw;
+    height: 22vw;
     animation: slow 4s ease 1s 1 normal forwards;
     -webkit-animation: slow 4s ease 1s 1 normal forwards;
     visibility: hidden;
@@ -112,7 +112,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10rem;
+    gap: 6vw;
     justify-content: center;
     align-items: center;
 }
@@ -120,12 +120,11 @@ nav ul{
     margin-left: auto;
     margin-right: auto;
     max-width: 100%; 
-    width: 400px;
-    height: 310px;
+    width: 25vw;
+    height: 22vw;
     animation: slow 7s ease 1s 1 normal forwards;
     -webkit-animation: slow 7s ease 1s 1 normal forwards;
     visibility: hidden;
-}
 }
 @keyframes slow {
     0% {
@@ -149,4 +148,65 @@ nav ul{
 }
 #blue{
     color: rgb(41, 117, 193);
+}
+@media all and (max-width:600px) and (min-width:400px){
+    nav{
+        height: 4vh;
+    } 
+    .nav-items li a{
+        font-size: 2vh;
+    }
+    #para{
+        font-size:3vh;
+    }
+    #para1{
+        font-size:3vh;
+    }
+    #para2{
+        font-size:3vh;
+    }
+    .footer{
+        height: 2vh;
+        width: 99vw;
+        font-size: 0.9vh;
+        bottom:0;
+    }
+    
+}
+@media all and (max-width:400px){
+    nav{
+        height: 4vh;
+    } 
+    .nav-items li a{
+        font-size: 2vh;
+    }
+    #para{
+        font-size:3vh;
+    }
+    #para1{
+        font-size:3vh;
+    }
+    #para2{
+        font-size:3vh;
+    }
+    .footer{
+        height: 2vh;
+        width: 99vw;
+        font-size: 0.9vh;
+        bottom:0;
+    }
+    .row{
+    flex-direction:column;
+    }
+    .row1{
+    flex-direction:column;
+    }
+    .row img{
+        width:20vh;
+        height: 20vh;
+    }
+    .row1 img{
+        width:20vh;
+        height: 20vh;
+    }
 }
