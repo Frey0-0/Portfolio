@@ -63,6 +63,7 @@ nav ul{
     flex-direction:row;
     margin-top:4vw; 
     margin-bottom: 3vw;
+    flex-wrap: wrap;
 }
 .social-icons a {
     margin-right: 3vw;
@@ -87,4 +88,7 @@ div img{
       opacity: 1;
       visibility: visible;
     }
+}
+#blue{
+    color: rgb(41, 117, 193);
 }

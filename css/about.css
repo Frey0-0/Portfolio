@@ -1,72 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap);
 body{
-    background:rgba(0, 0, 0, 0.9);
+    background-color: black;
     color: white;
 }
-.footer{
-    background: rgb(12, 120, 222);
-    color:white;
-    
+img:hover{
+    top: -5px;
+    left: -5px;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(226, 217, 217, 0.932);
 }
-#fleft{
-    padding-left:70%;
-}
-#space{
-    padding-top: 8.2%;
-}
-
-.nav-container{
+.nav-bar{
     display: flex;
     flex-direction: row;
     background-color: rgba(83, 82, 82, 0.589);
+
 }
-.wrapper{
-    width: 1250 px;
+.nav-bar-wrap{
+    width: 1vw;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 72 px;
-}
+    height: 4vw;
+} 
 nav ul{
     display: flex;
 }
-nav .home{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 32 px;
-margin-top: 28 px;
+.nav-items li a{
+    font-size: 2vw;
+    color: rgb(201, 151, 65);
 }
 .nav-items li{
     list-style: none;
-    margin-right: 60 px;
-    margin-top: 24 px;
-}
-.nav-items li a{
+    margin-right: 10vw;
+    margin-top: 0.5vw;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22 px;
-    color: rgb(201, 151, 65);
 }
 .nav-items li a:hover{
     color: rgba(8, 82, 8, 0.729);
-}
-.home a{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22 px;
-    color: rgb(201, 151, 65);
-}
-.home a:hover{
-    color: rgba(8, 82, 8, 0.729);
-}
-#hello{
-    padding-left: 60px;
-    color: rgb(41, 117, 193);
-    animation: fadeIn 1.5s ease 3s 1 normal forward;
-    font-size: 50px;
-}
-p{
-    padding-left: 60px;
-    font-size: 30px;
-}
+}  
+
 #orange{
     color:rgba(249, 141, 86, 0.92); ;
 }
@@ -74,10 +49,104 @@ p{
     color: rgb(24, 207, 227);
 }
 #green{
-    color: rgb(174, 244, 160);
+    color: rgb(148, 248, 128);
 }
-img {
-    display: block;
+
+.footer{
+    background: rgb(12, 120, 222);
+    color:white;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    bottom: 0;
+    width: 98vw;
+    height: 2vw;
+    font-size: 0.75vw;
+    font-family: "Roboto",serif;
+    gap: 1rem;  
+}
+#para{
+    padding-left: 60px;
+    font-size: 32px;
+    font-family: 'Titillium Web', sans-serif;
+    animation: slow 1s ease 1s 1 normal forwards;
+    -webkit-animation: slow 1s ease 1s 1 normal forwards;
+    visibility: hidden;
+}
+#para1{
+    padding-left: 60px;
+    font-size: 32px;
+    font-family: 'Titillium Web', sans-serif;
+    animation: slow 4s ease 1s 1 normal forwards;
+    -webkit-animation: slow 4s ease 1s 1 normal forwards;
+    visibility: hidden;
+}
+#para2{
+    padding-left: 60px;
+    font-size: 32px;
+    font-family: 'Titillium Web', sans-serif;
+    animation: slow 7s ease 1s 1 normal forwards;
+    -webkit-animation: slow 7s ease 1s 1 normal forwards;
+    visibility: hidden;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center; 
+}
+.row img{
     margin-left: auto;
     margin-right: auto;
-  }
+    width: 300px;
+    height: 310px;
+    animation: slow 4s ease 1s 1 normal forwards;
+    -webkit-animation: slow 4s ease 1s 1 normal forwards;
+    visibility: hidden;
+}
+    
+.row1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.row1 img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+    width: 400px;
+    height: 310px;
+    animation: slow 7s ease 1s 1 normal forwards;
+    -webkit-animation: slow 7s ease 1s 1 normal forwards;
+    visibility: hidden;
+}
+}
+@keyframes slow {
+    0% {
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+}
+@-webkit-keyframes slow {
+    0% {
+      opacity: 0;
+      visibility:visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+}
+#blue{
+    color: rgb(41, 117, 193);
+}
