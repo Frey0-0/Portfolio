@@ -58,8 +58,8 @@ nav ul{
     display: flex;
     flex-direction: row-reverse;
     position: fixed;
-    bottom: 0;
-    width: 98vw;
+    bottom: 0;  
+    width: 100vw;
     height: 2vw;
     font-size: 0.75vw;
     font-family: "Roboto",serif;
@@ -114,7 +114,7 @@ nav ul{
     flex-wrap: wrap;
     gap: 6vw;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
 }
 .row1 img{
     margin-left: auto;
@@ -125,6 +125,7 @@ nav ul{
     animation: slow 7s ease 1s 1 normal forwards;
     -webkit-animation: slow 7s ease 1s 1 normal forwards;
     visibility: hidden;
+    padding-bottom: 3vw;
 }
 @keyframes slow {
     0% {
@@ -149,34 +150,10 @@ nav ul{
 #blue{
     color: rgb(41, 117, 193);
 }
-@media all and (max-width:600px) and (min-width:400px){
+@media all and (max-width:600px) and (min-width:1000px){
     nav{
         height: 4vh;
-    } 
-    .nav-items li a{
-        font-size: 2vh;
     }
-    #para{
-        font-size:3vh;
-    }
-    #para1{
-        font-size:3vh;
-    }
-    #para2{
-        font-size:3vh;
-    }
-    .footer{
-        height: 2vh;
-        width: 99vw;
-        font-size: 0.9vh;
-        bottom:0;
-    }
-    
-}
-@media all and (max-width:400px){
-    nav{
-        height: 4vh;
-    } 
     .nav-items li a{
         font-size: 2vh;
     }
@@ -196,17 +173,61 @@ nav ul{
         bottom:0;
     }
     .row{
-    flex-direction:column;
+        flex-direction:column;
     }
     .row1{
-    flex-direction:column;
+        flex-direction:column;
     }
     .row img{
-        width:20vh;
-        height: 20vh;
+            width:20vh;
+            height: 20vh;
     }
     .row1 img{
-        width:20vh;
-        height: 20vh;
+            width:25vh;
+            height: 25vh;
+    }
+    .footer {
+        padding-bottom: 1%;
+    }
+}
+
+@media all and (max-width:1000px){
+    .footer{
+        padding-bottom: 0.5%;
+    }
+    nav{
+        height: 4vh;
+    }
+    .nav-items li a{
+        font-size: 2vh;
+    }
+    #para{
+        font-size:3vh;
+    }
+    #para1{
+        font-size:3vh;
+    }
+    #para2{
+        font-size:3vh;
+    }
+    .footer{
+        height: 2vh;
+        width: 99vw;
+        font-size: 0.9vh;
+        bottom:0;
+    }
+    .row{
+        flex-direction:column;
+    }
+    .row1{
+        flex-direction:column;
+    }
+    .row img{
+            width:20vh;
+            height: 20vh;
+    }
+    .row1 img{
+            width:25vh;
+            height: 25vh;
     }
 }

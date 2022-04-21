@@ -96,7 +96,8 @@ nav ul{
     flex-direction: row-reverse;
     position: absolute;
     bottom: 0;
-    width: 99.53vw;
+    left:0;
+    width: 100vw;
     height: 2vw;
     font-size: 0.75vw;
     font-family: "Roboto",serif;
