@@ -114,3 +114,43 @@ div img{
         width: 4vh;
     }
 }
+@media all and (max-width:1000px){
+    .footer{
+        padding-bottom: 0.5%;
+    }
+    nav{
+        height: 4vh;
+    }
+    .nav-items li a{
+        font-size: 2vh;
+    }
+    #para{
+        font-size:3vh;
+    }
+    #para1{
+        font-size:3vh;
+    }
+    #para2{
+        font-size:3vh;
+    }
+    .footer{
+        height: 2vh;
+        width: 99vw;
+        font-size: 0.9vh;
+        bottom:0;
+    }
+    .row{
+        flex-direction:column;
+    }
+    .row1{
+        flex-direction:column;
+    }
+    .row img{
+            width:20vh;
+            height: 20vh;
+    }
+    .row1 img{
+            width:25vh;
+            height: 25vh;
+    }
+}
