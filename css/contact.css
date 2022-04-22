@@ -53,6 +53,7 @@ nav ul{
     position: absolute;
     bottom: 0;
     left:0;
+    right:0;
     width: 100vw;
     height: 2vw;
     font-size: 0.75vw;
@@ -105,13 +106,16 @@ div img{
     }
     .footer{
         height: 2vh;
-        width: 99vw;
+        width: 100vw;
         font-size: 0.9vh;
         bottom:0;
     }
     div img{
         height: 4vh;
         width: 4vh;
+    }
+    .footer {
+        padding-bottom: 1%;
     }
 }
 @media all and (max-width:1000px){
@@ -135,7 +139,7 @@ div img{
     }
     .footer{
         height: 2vh;
-        width: 99vw;
+        width: 100vw;
         font-size: 0.9vh;
         bottom:0;
     }

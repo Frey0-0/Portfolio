@@ -97,7 +97,7 @@ nav ul{
     position: absolute;
     bottom: 0;
     left:0;
-    width: 100vw;
+    right:0;
     height: 2vw;
     font-size: 0.75vw;
     font-family: "Roboto",serif;
@@ -121,9 +121,11 @@ nav ul{
     }
     .footer{
         height: 2vh;
-        width: 99vw;
+        width: 100vw;
         font-size: 0.9vh;
-        bottom:0;
+        bottom: 0;
+        left:0;
+        right:0;
     }
     .footer {
         padding-bottom: 1%;
@@ -150,9 +152,11 @@ nav ul{
     }
     .footer{
         height: 2vh;
-        width: 99vw;
+        width: 100vw;
         font-size: 0.9vh;
-        bottom:0;
+        bottom: 0;
+        left:0;
+        right:0;
     }
     .row{
         flex-direction:column;
